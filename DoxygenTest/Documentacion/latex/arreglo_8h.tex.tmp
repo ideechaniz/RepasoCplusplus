@@ -1,0 +1,130 @@
+\hypertarget{arreglo_8h}{}\section{Referencia del Archivo arreglo.\+h}
+\label{arreglo_8h}\index{arreglo.\+h@{arreglo.\+h}}
+
+
+Clase para el manejo estadistico de datos.  
+
+
+{\ttfamily \#include \char`\"{}funciones.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Dependencia gráfica adjunta para arreglo.\+h\+:
+% FIG 0
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:
+% FIG 1
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_mayor}{Mayor$<$ Tipo $>$}
+\begin{DoxyCompactList}\small\item\em Estructura auxiliar de la estructura \hyperlink{struct_moda}{Moda}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_moda}{Moda$<$ Tipo $>$}
+\begin{DoxyCompactList}\small\item\em Estructura auxiliar de la clase \hyperlink{class_arreglo}{Arreglo}. \end{DoxyCompactList}\item 
+class \hyperlink{class_arreglo}{Arreglo$<$ Tipo $>$}
+\begin{DoxyCompactList}\small\item\em Clase para almacenar datos y hacer operaciones estadisticas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6}{Ordenamiento} \{ \hyperlink{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652}{A\+S\+C\+E\+N\+D\+E\+N\+TE} = 0, 
+\hyperlink{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6a5cca894366cc73597a376660bb317f3c}{D\+E\+S\+C\+E\+N\+D\+E\+N\+TE} = 1
+ \}\begin{DoxyCompactList}\small\item\em Enumeracion para elegir la forma de ordenar el \hyperlink{class_arreglo}{Arreglo}. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Tipo $>$ }\\std\+::ostream \& \hyperlink{arreglo_8h_a2d81357b9b85c70b88481b1e4527e37a}{operator$<$$<$} (std\+::ostream \&o, const \hyperlink{struct_moda}{Moda}$<$ Tipo $>$ \&mo)
+\begin{DoxyCompactList}\small\item\em Operador de insercion de la estructura \hyperlink{struct_moda}{Moda}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::ostream \& \hyperlink{arreglo_8h_adb4a65563738571a30f77e46a3427138}{operator$<$$<$} (std\+::ostream \&o, const \hyperlink{class_arreglo}{Arreglo}$<$ Type $>$ \&A)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase para el manejo estadistico de datos. 
+
+\begin{DoxyVersion}{Versión}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Fecha}
+08/10/2018 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autor}
+Iker Echaniz \& Duarte\+Corporation  Clase plantilla \hyperlink{class_arreglo}{Arreglo} 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}()
+\{
+    \textcolor{keyword}{const} \textcolor{keywordtype}{double} valores[] = \{1 ,2, 3, 4, 5, 6, 7, 8, 8 \};
+    \hyperlink{class_arreglo}{Arreglo<double>} A(valores, \textcolor{keyword}{sizeof}(valores)/\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}));
+
+    cout << \textcolor{stringliteral}{"Valores: "} << A           << endl;
+    cout << \textcolor{stringliteral}{"Media : "}  << A.media()   << endl;
+    cout << \textcolor{stringliteral}{"Mediana: "} << A.mediana() << endl;
+    cout << \textcolor{stringliteral}{"Moda: "}    << A.moda()    << endl;
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+ 
+\end{DoxyAuthor}
+
+
+\subsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6}\label{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6}} 
+\index{arreglo.\+h@{arreglo.\+h}!Ordenamiento@{Ordenamiento}}
+\index{Ordenamiento@{Ordenamiento}!arreglo.\+h@{arreglo.\+h}}
+\subsubsection{\texorpdfstring{Ordenamiento}{Ordenamiento}}
+{\footnotesize\ttfamily enum \hyperlink{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6}{Ordenamiento}}
+
+
+
+Enumeracion para elegir la forma de ordenar el \hyperlink{class_arreglo}{Arreglo}. 
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+S\+C\+E\+N\+D\+E\+N\+TE@{A\+S\+C\+E\+N\+D\+E\+N\+TE}!arreglo.\+h@{arreglo.\+h}}\index{arreglo.\+h@{arreglo.\+h}!A\+S\+C\+E\+N\+D\+E\+N\+TE@{A\+S\+C\+E\+N\+D\+E\+N\+TE}}}\mbox{\Hypertarget{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652}\label{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652}} 
+A\+S\+C\+E\+N\+D\+E\+N\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+E\+S\+C\+E\+N\+D\+E\+N\+TE@{D\+E\+S\+C\+E\+N\+D\+E\+N\+TE}!arreglo.\+h@{arreglo.\+h}}\index{arreglo.\+h@{arreglo.\+h}!D\+E\+S\+C\+E\+N\+D\+E\+N\+TE@{D\+E\+S\+C\+E\+N\+D\+E\+N\+TE}}}\mbox{\Hypertarget{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6a5cca894366cc73597a376660bb317f3c}\label{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6a5cca894366cc73597a376660bb317f3c}} 
+D\+E\+S\+C\+E\+N\+D\+E\+N\+TE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{arreglo_8h_a2d81357b9b85c70b88481b1e4527e37a}\label{arreglo_8h_a2d81357b9b85c70b88481b1e4527e37a}} 
+\index{arreglo.\+h@{arreglo.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!arreglo.\+h@{arreglo.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Tipo $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{o,  }\item[{const \hyperlink{struct_moda}{Moda}$<$ Tipo $>$ \&}]{mo }\end{DoxyParamCaption})}
+
+
+
+Operador de insercion de la estructura \hyperlink{struct_moda}{Moda}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em o} & ostream de salida \\
+\hline
+{\em mo} & \hyperlink{struct_moda}{Moda} de entrada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ostream\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arreglo_8h_adb4a65563738571a30f77e46a3427138}\label{arreglo_8h_adb4a65563738571a30f77e46a3427138}} 
+\index{arreglo.\+h@{arreglo.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!arreglo.\+h@{arreglo.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{o,  }\item[{const \hyperlink{class_arreglo}{Arreglo}$<$ Type $>$ \&}]{A }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em o} & ostream\& \\
+\hline
+{\em A} & Referencia constante a un \hyperlink{class_arreglo}{Arreglo} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ostream\& 
+\end{DoxyReturn}

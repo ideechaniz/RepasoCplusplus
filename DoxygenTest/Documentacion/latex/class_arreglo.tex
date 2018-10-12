@@ -1,0 +1,191 @@
+\hypertarget{class_arreglo}{}\section{Referencia de la plantilla de la Clase Arreglo$<$ Tipo $>$}
+\label{class_arreglo}\index{Arreglo$<$ Tipo $>$@{Arreglo$<$ Tipo $>$}}
+
+
+Clase para almacenar datos y hacer operaciones estadisticas.  
+
+
+
+
+{\ttfamily \#include $<$arreglo.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_arreglo_a6675919f9bee34731943b4cde7d60fff}{Arreglo} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de \hyperlink{class_arreglo}{Arreglo}. \end{DoxyCompactList}\item 
+\hyperlink{class_arreglo_a2fbab0dd6c8a922e165711649a6a7640}{Arreglo} (const Tipo $\ast$valores, int tam)
+\begin{DoxyCompactList}\small\item\em Constructor de \hyperlink{class_arreglo}{Arreglo}. \end{DoxyCompactList}\item 
+\hyperlink{class_arreglo_a7917d5870c310e1ccabe456fd82b445a}{Arreglo} (const \hyperlink{class_arreglo}{Arreglo} \&otro)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de \hyperlink{class_arreglo}{Arreglo}. \end{DoxyCompactList}\item 
+\hyperlink{class_arreglo_a1f22e8ac100a6dcc3e18f7850bde7b0a}{$\sim$\+Arreglo} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \hyperlink{class_arreglo}{Arreglo}. \end{DoxyCompactList}\item 
+double \hyperlink{class_arreglo_a3520ce3d2a9d701d5a4543897be362c0}{media} () const
+\begin{DoxyCompactList}\small\item\em media Obtiene el valor de la media aritmetica \end{DoxyCompactList}\item 
+Tipo \hyperlink{class_arreglo_a84a3c8f3187822db817d8bb29e377e07}{mediana} () const
+\begin{DoxyCompactList}\small\item\em mediana Obtiene el valor intermedio de la serie de valores \end{DoxyCompactList}\item 
+\hyperlink{struct_moda}{Moda}$<$ Tipo $>$ \hyperlink{class_arreglo_aa88660ef09061682eb6e2a78e96b76c1}{moda} () const
+\begin{DoxyCompactList}\small\item\em moda Obtiene el valor con mayor numero de ocurrencias \end{DoxyCompactList}\item 
+void \hyperlink{class_arreglo_ac1e8f3ecec261c1829257e144d67e4f7}{ordena} (\hyperlink{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6}{Ordenamiento} ord=\hyperlink{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652}{A\+S\+C\+E\+N\+D\+E\+N\+TE})
+\begin{DoxyCompactList}\small\item\em ordena Ordena el contenido del \hyperlink{class_arreglo}{Arreglo} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::ostream \& \hyperlink{class_arreglo_adb4a65563738571a30f77e46a3427138}{operator$<$$<$} (std\+::ostream \&o, const \hyperlink{class_arreglo}{Arreglo}$<$ Type $>$ \&A)
+\begin{DoxyCompactList}\small\item\em Operador de insercion de la clase \hyperlink{class_arreglo}{Arreglo}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$typename Tipo$>$\newline
+class Arreglo$<$ Tipo $>$}
+
+Clase para almacenar datos y hacer operaciones estadisticas. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_arreglo_a6675919f9bee34731943b4cde7d60fff}\label{class_arreglo_a6675919f9bee34731943b4cde7d60fff}} 
+\index{Arreglo@{Arreglo}!Arreglo@{Arreglo}}
+\index{Arreglo@{Arreglo}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{Arreglo()}{Arreglo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Tipo$>$ \\
+\hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$\+::\hyperlink{class_arreglo}{Arreglo} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor por defecto de \hyperlink{class_arreglo}{Arreglo}. 
+
+\mbox{\Hypertarget{class_arreglo_a2fbab0dd6c8a922e165711649a6a7640}\label{class_arreglo_a2fbab0dd6c8a922e165711649a6a7640}} 
+\index{Arreglo@{Arreglo}!Arreglo@{Arreglo}}
+\index{Arreglo@{Arreglo}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{Arreglo()}{Arreglo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Tipo $>$ \\
+\hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$\+::\hyperlink{class_arreglo}{Arreglo} (\begin{DoxyParamCaption}\item[{const Tipo $\ast$}]{valores,  }\item[{int}]{tam }\end{DoxyParamCaption})}
+
+
+
+Constructor de \hyperlink{class_arreglo}{Arreglo}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em valores} & Representa el arreglo de valores \\
+\hline
+{\em tam} & Tamaño del arreglo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arreglo_a7917d5870c310e1ccabe456fd82b445a}\label{class_arreglo_a7917d5870c310e1ccabe456fd82b445a}} 
+\index{Arreglo@{Arreglo}!Arreglo@{Arreglo}}
+\index{Arreglo@{Arreglo}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{Arreglo()}{Arreglo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Tipo $>$ \\
+\hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$\+::\hyperlink{class_arreglo}{Arreglo} (\begin{DoxyParamCaption}\item[{const \hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$ \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de \hyperlink{class_arreglo}{Arreglo}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & Otro arreglo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arreglo_a1f22e8ac100a6dcc3e18f7850bde7b0a}\label{class_arreglo_a1f22e8ac100a6dcc3e18f7850bde7b0a}} 
+\index{Arreglo@{Arreglo}!````~Arreglo@{$\sim$\+Arreglo}}
+\index{````~Arreglo@{$\sim$\+Arreglo}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{$\sim$\+Arreglo()}{~Arreglo()}}
+{\footnotesize\ttfamily template$<$typename Tipo$>$ \\
+\hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$\+::$\sim$\hyperlink{class_arreglo}{Arreglo} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor de la clase \hyperlink{class_arreglo}{Arreglo}. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_arreglo_a3520ce3d2a9d701d5a4543897be362c0}\label{class_arreglo_a3520ce3d2a9d701d5a4543897be362c0}} 
+\index{Arreglo@{Arreglo}!media@{media}}
+\index{media@{media}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{media()}{media()}}
+{\footnotesize\ttfamily template$<$typename Tipo $>$ \\
+double \hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$\+::media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+media Obtiene el valor de la media aritmetica 
+
+\begin{DoxyReturn}{Devuelve}
+Valor calculado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_arreglo_a84a3c8f3187822db817d8bb29e377e07}\label{class_arreglo_a84a3c8f3187822db817d8bb29e377e07}} 
+\index{Arreglo@{Arreglo}!mediana@{mediana}}
+\index{mediana@{mediana}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{mediana()}{mediana()}}
+{\footnotesize\ttfamily template$<$typename Tipo $>$ \\
+Tipo \hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$\+::mediana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+mediana Obtiene el valor intermedio de la serie de valores 
+
+\begin{DoxyReturn}{Devuelve}
+El valor intermedio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_arreglo_aa88660ef09061682eb6e2a78e96b76c1}\label{class_arreglo_aa88660ef09061682eb6e2a78e96b76c1}} 
+\index{Arreglo@{Arreglo}!moda@{moda}}
+\index{moda@{moda}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{moda()}{moda()}}
+{\footnotesize\ttfamily template$<$typename Tipo $>$ \\
+\hyperlink{struct_moda}{Moda}$<$ Tipo $>$ \hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$\+::moda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+moda Obtiene el valor con mayor numero de ocurrencias 
+
+\begin{DoxyReturn}{Devuelve}
+\hyperlink{struct_moda}{Moda} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_arreglo_ac1e8f3ecec261c1829257e144d67e4f7}\label{class_arreglo_ac1e8f3ecec261c1829257e144d67e4f7}} 
+\index{Arreglo@{Arreglo}!ordena@{ordena}}
+\index{ordena@{ordena}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{ordena()}{ordena()}}
+{\footnotesize\ttfamily template$<$typename Tipo $>$ \\
+void \hyperlink{class_arreglo}{Arreglo}$<$ Tipo $>$\+::ordena (\begin{DoxyParamCaption}\item[{\hyperlink{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6}{Ordenamiento}}]{ord = {\ttfamily \hyperlink{arreglo_8h_a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652}{A\+S\+C\+E\+N\+D\+E\+N\+TE}} }\end{DoxyParamCaption})}
+
+
+
+ordena Ordena el contenido del \hyperlink{class_arreglo}{Arreglo} 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ord} & Forma de ordenamiento \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{class_arreglo_adb4a65563738571a30f77e46a3427138}\label{class_arreglo_adb4a65563738571a30f77e46a3427138}} 
+\index{Arreglo@{Arreglo}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Arreglo@{Arreglo}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$typename Tipo$>$ \\
+template$<$typename Type $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{o,  }\item[{const \hyperlink{class_arreglo}{Arreglo}$<$ Type $>$ \&}]{A }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de insercion de la clase \hyperlink{class_arreglo}{Arreglo}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em o} & ostream\& \\
+\hline
+{\em A} & Referencia constante a un \hyperlink{class_arreglo}{Arreglo} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ostream\& 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{arreglo_8h}{arreglo.\+h}\end{DoxyCompactItemize}
